@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INFRAESTRUTURA</title>
+</head>
+<body>
+    
+    <div class="container">
+        <h1>INFRAESTRUTURA</h1>
+        <div class="toggle-content"> <hyper
+            <p>Buracos, iluminação, calçadas e esgotos</p>
+        </div>
+        <h2>Fazer denúncia <button class="toggle-btn"></h2>
+        <div class="toggle-content">
+            <p>Reporte com foto, descrição e localização</p>
+        </div>
+        <h3>Voluntário <button class="toggle-btn"></button></h3>
+        <p> contribua com tempo e recursos financeiros</p>
+        <div class="toggle-content">
+        
+        </div>
+        
+    </div>
+
+<script>
+// Adiciona funcionalidade de toggle para cada botão
+document.querySelectorAll('.toggle-btn').forEach(function(btn) {
+    btn.addEventListener('click', function() {
+        var content = btn.parentElement.nextElementSibling;
+        if (content && content.classList.contains('toggle-content')) {
+            content.style.display = (content.style.display === 'none') ? '' : 'none';
+        }
+    });
+});
+</script>
+</body>
+</html>
